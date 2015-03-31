@@ -1,0 +1,80 @@
+#master .focus {
+  -moz-box-shadow: 0px 0px 0px 3px #ffbf47;
+  -webkit-box-shadow: 0px 0px 0px 3px #ffbf47;
+  box-shadow: 0px 0px 0px 3px #ffbf47;
+}
+#master .guideFieldWidget input[type="radio"],
+#master .guideFieldWidget input[type="checkbox"] {
+  height: 100%;
+}
+#master .guideFieldHorizontalAlignment {
+  float: left;
+}
+#master .guideFieldWidget.left {
+  float: none;
+}
+#master .XfaHMRCCheckbox {
+  display: table-cell;
+  background: #dee0e2;
+  padding: 0 0 0 15px;
+  border: 1px solid #dee0e2;
+  border-right: none;
+  /*Fake border to stop radio button moving when clicked or hovered on*/
+
+}
+#master .XfaHMRCCheckbox + .guideWidgetLabel {
+  display: table-cell;
+  background: #dee0e2;
+  padding: 10px 30px 10px 10px;
+  border: 1px solid #dee0e2;
+  border-left: none;
+  /*Fake border to stop radio button moving when clicked or hovered on*/
+
+  vertical-align: middle;
+  float: none;
+}
+#master .XfaHMRCCheckbox input[type="radio"]:focus,
+#master .XfaHMRCCheckbox input[type="checkbox"]:focus {
+  outline: none !important;
+}
+#master .XfaHMRCCheckbox.selected {
+  display: table-cell;
+  background: #ffffff;
+  border: 1px solid black;
+  border-right: none;
+}
+#master .XfaHMRCCheckbox.selected + .guideWidgetLabel {
+  display: table-cell;
+  background: #ffffff;
+  border: 1px solid black;
+  border-left: none;
+}
+#master .XfaHMRCCheckbox.selected input[type="radio"]:focus,
+#master .XfaHMRCCheckbox.selected input[type="checkbox"]:focus {
+  outline: none !important;
+}
+#master .guideCheckBoxItem,
+#master .guideRadioButtonItem {
+  display: table;
+  margin-top: 10px;
+  margin-left: 3px;
+  padding-top: 0;
+  /*.guideWidgetLabel{
+        vertical-align: middle;
+    }*/
+
+}
+#master .guideCheckBoxItem .guideFieldWidget,
+#master .guideRadioButtonItem .guideFieldWidget {
+  margin-top: 0px;
+}
+#master .guideCheckBoxItem:hover .XfaHMRCCheckbox,
+#master .guideRadioButtonItem:hover .XfaHMRCCheckbox {
+  border: 1px solid black;
+  border-right: none;
+}
+#master .guideCheckBoxItem:hover .guideWidgetLabel,
+#master .guideRadioButtonItem:hover .guideWidgetLabel {
+  border: 1px solid black;
+  border-left: none;
+}

@@ -1,0 +1,1003 @@
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+@import "/etc/clientlibs/fd/af/guidetheme/common/less/globalvariables.less";
+@import "/etc/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less";
+@import "colours";
+@import "template-variables";
+
+//	the following classes are outside the "master" id tag
+.tooltip {
+  visibility: hidden;
+}
+
+a, a:link {
+    text-decoration: underline;
+}
+
+body,body #master {
+	font-family: "nta", Arial, sans-serif;
+    font-size: @gds-body-text-size;
+    color: @text-colour;
+    line-height: 25px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+//override the class applied by the container
+#content>article {
+    width: 100%;
+}
+
+
+
+
+
+////////////////////////////////////	the rest are insite the #master tag	//////////////////////////////////////////////
+#master {
+@import "/etc/clientlibs/fd/af/guidetheme/common/less/components.less";
+@import "/etc/clientlibs/fd/af/guidetheme/common/less/layouts.less";
+
+
+.version{
+	font-size:10px;
+    color:rgb(160,160,160);
+    text-align:left;
+}
+
+
+// Hide element
+.hiddenField{
+	display: none;
+}
+
+
+
+/*///////// legend override //////////*/
+legend {
+ 	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 0;
+	line-height: 0;
+	color: 0;
+	border: 0;
+	border-bottom: 0;
+}
+
+
+
+//////////    Spacing            ////////////*/
+
+label {
+  	margin-bottom: 0;
+}
+
+.guidePanelNode {
+  	padding: 0;
+}
+
+.PanelContainer{
+  	left:0;
+    padding: 0;
+}
+
+.guideFieldNode {
+  	padding: 0;
+}
+
+.guidefield{
+    margin-top: 0;
+  	margin-bottom: 30px;
+}
+.panel {
+  margin-bottom: 0;
+  border: none;
+}
+.guideContainerWrapperNode.guideContainerNode {
+  padding: 10px 90px 10px 90px;
+  margin: auto;
+}
+
+.guideContainerNode{
+	 padding: 10px 0px 10px 0px;
+}
+
+///	Error summary   	///
+.parbase.ErrorSummary {
+  padding: 0 30px 0 30px;
+  max-width: 1020px;
+  margin: auto;
+}
+
+
+
+
+///////   form text, headings and labels   ///////////////////*/
+
+//	max size of static text and max label size
+.guidetextdraw .guideFieldNode,
+.guideFieldLabel{
+    width: 100%;
+	max-width: 570px;
+}
+
+.infoText{
+	background: url(../images/icon-important.png) no-repeat scroll 0.3em 0.5em;
+    padding-left: 45px;
+    min-height: 45px;
+    p {
+		padding: 14px 0 0 10px;
+        word-wrap: break-word;
+    }
+}
+
+.insetText {
+	border-left: 4px solid @grey-2;
+	padding: 10px 5px 10px 15px;
+    margin: 1em 5px 1em 5px;
+
+    p {
+    	margin: 0.1em 0 0.1em 0;
+        max-width: 30em;
+    }
+}
+
+.guidetextdraw *:focus{
+	outline:none;//	remove focus highlight effect from static text
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  	margin-top: 0;
+  	margin-bottom: 18;
+}
+
+
+
+a, a:link {
+    font-size: @font-size-base;
+    color: @link-colour;
+    outline: none;
+    text-decoration: underline;
+    background-color: none;
+    &:hover{
+    	color: @link-hover-colour;
+    }
+    &:focus {
+        outline: none;
+        background-color: @yellow;
+    }
+}
+.guideFieldWidget input[type="text"],
+.guideFieldWidget textarea{
+  	font-size: 19px;
+}
+
+.leadText p{
+	font-size: @font-size-lead;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.bodyCopy p{
+	font-size: @font-size-base;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.supportingText p{
+	font-size: @font-size-supporting;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.guidePanelDescription {
+  	font-size: 2em;
+    font-weight: 700;
+    color: @text-colour;
+
+}
+
+
+h1{
+
+    font-size: @font-size-h1;
+    font-weight: 700;
+}
+
+h2{
+  	font-size: @font-size-h2;
+    font-weight: 700;
+}
+
+h3{
+  	font-size: @font-size-h3;
+    font-weight: 700;
+}
+
+//h4{
+//  	font-size: @font-size-h4;
+//    font-weight: 700;
+//}
+
+.progress-title {
+  	color: @grey-1;
+    font-size: @font-size-section-heading;
+}
+
+.infoText{
+    p {
+    	font-size: @font-size-base;
+    }
+}
+.insetText {
+    p {
+        font-size: @font-size-base;
+    }
+}
+.miscHeading{
+	font-size: @font-size-h3;
+	font-weight: 700;
+    line-height: 1.25;
+}
+
+.guideFieldNode {
+
+    .guideFieldLabel label{
+        font-size: @font-size-label;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+
+    .guideWidgetLabel label{
+    	font-size: @font-size-base;
+    }
+
+    .guideFieldDescription{
+        &.short{
+            padding: 5px 5px 5px 0;
+        }
+
+        p {
+    		font-size: @font-size-base;
+        }
+    }
+}
+.guideFieldLabel label{
+	font-size: @font-size-h3;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.supplementary-text {
+  	color: @supplementary-text-colour;
+    font-size: @font-size-base;
+}
+
+.guideFieldNode .guideFieldError{
+  	color: @error-colour;
+  	font-size: @font-size-base;
+  	font-weight: 500;
+}
+
+.guidetoolbar button,
+.guidetoolbar #backlink,
+.guideButton button.button{
+	font-size: @font-size-base;
+}
+
+.guideFieldNode .guideHelpQuestionMark {
+    font-size: @font-size-base;
+    color: #007fa2;
+}
+
+.hmrc-summary > div{
+	font-size: @font-size-base;
+}
+
+
+///////////////  fields /////////////////// */
+
+//	progressive disclosure
+.insetFields{
+    padding: 0 5px 5px 5px;
+    margin: 0 5px 10px 5px;
+    border-left: solid 3px @grey-2;
+}
+
+
+//	telephone and number fields missing from template css so adding it here.
+.guideFieldWidget input[type="tel"],
+.guideFieldWidget input[type="number"] {
+  width: 100%;
+  height: 100%;
+  border: @border-colour 1px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  font-size: 19px;
+  color: #ff0000;
+  line-height: 1.428571429;
+  background-image: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  padding: 2px;
+}
+
+.guideFieldWidget input[type="number"]::-webkit-inner-spin-button,
+.guideFieldWidget input[type="number"]::-webkit-outer-spin-button,
+.guideFieldWidget input[type="tel"]::-webkit-inner-spin-button,
+.guideFieldWidget input[type="tel"]::-webkit-outer-spin-button{
+	-webkit-appearance:normal; /* Safari and Chrome */
+       -moz-appearance:normal; /* Firefox */
+    	    appearance:normal;
+    margin: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+	-webkit-appearance:none; /* Safari and Chrome */
+       -moz-appearance:none; /* Firefox */
+    	    appearance:none;
+    margin: 0;
+}
+
+
+
+.noOutline input:focus { /* makes the outline not visible. This is used for read only fields where we dont want a highlight*/
+	outline: none !important;
+}
+
+.prepopulated.guideFieldNode[data-disabled="true"]
+{
+    input[type="text"]
+    {
+        color: @prepopulated-text-colour;
+        background-color: @prepopulated-background-colour;
+        border-color: @prepopulated-border-colour;
+        border-width: 1px;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+	input:focus
+    {
+		outline:none !important;
+    }
+
+}
+
+
+.guideFieldWidget input[type="checkbox"],
+.guideFieldWidget input[type="radio"] {
+	background-color: rgba(255,255,255,0);
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.guideFieldNode[data-mandatory="true"] input[type="date"],
+.guideFieldNode[data-mandatory="true"] input[type="text"],
+.guideFieldNode[data-mandatory="true"] input[type="tel"],
+.guideFieldNode[data-mandatory="true"] input[type="number"],
+.guideFieldNode[data-mandatory="true"] input[type="password"],
+.guideFieldNode[data-mandatory="true"] select,
+.guideFieldNode[data-mandatory="true"] textarea {
+  border-color: @border-colour;
+}
+
+.guideFieldNode[data-mandatory="true"] input[type="checkbox"],
+.guideFieldNode[data-mandatory="true"] input[type="radio"]{
+  border-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.radio,
+.checkbox {
+  padding-left: 0;
+}
+
+.guideFieldWidget input[type="checkbox"],
+.guideFieldWidget input[type="radio"] {
+	outline: none !important;
+}
+
+
+
+.guideFieldNode.validation-failure .guideFieldLabel,
+.guideFieldNode.validation-failure .textField,
+.guideFieldNode.validation-failure .guideRadioButtonGroupItems,
+.guideFieldNode.validation-failure .guideCheckBoxGroupItems,
+.guideFieldNode.validation-failure .dropDownList{
+    /*background-color: @error-background;*/
+    border: solid @error-colour 0px;
+    border-left-width: 3px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+////// Styling the Global Error Container **/
+
+
+.global-error-div {
+    /*background-color: @error-background;*/
+    color:@error-colour;
+    border:solid 3px @error-colour;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+
+    width: 100%;
+    max-width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+//////  Styling the Default Message in the Global Container **/
+.global-error-div h4 {
+    color:@error-colour;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+///// Styling for the Error Item in the Global Container **/
+.global-error-div .error-item {
+    margin-bottom:15px;
+}
+
+/////  Styling for the Error Message inside the Global Container **/
+.global-error-div .error-item .error-text:before {
+  	content: "\2022";
+    float: left;
+}
+
+.global-error-div .error-item .error-text {
+    text-decoration:none;
+    color:inherit;
+    display:block;
+    padding:4px;
+    padding-left:0;
+    margin-left:0;
+}
+
+//////// Styling for the Error Message (when user hovers over it) inside the Global Container
+.global-error-div .error-item .error-text:hover {
+    text-decoration:underline;
+}
+
+/////// Hiding the Global Error Container when there are no validation errors
+.global-error-div.no-validation-errors {
+    display:none;
+}
+.global-error-div .error-item .close {
+    margin-top:2px;
+}
+.global-error-div .error-item .close:hover {
+    color:#4c0c00;
+}
+
+.redOutline{
+  border: @error-colour solid 5px;
+}
+
+
+.guideFieldNode .guideFieldDescription.short {
+    background-color: rgba(255, 255, 255, 0);
+    /*width: 400px;*/
+}
+.guideFieldNode .guideFieldDescription p {
+  color: @secondary-text-colour;
+}
+.guidePanelNode {
+  color: @text-colour;
+}
+
+div .guideFieldError:empty {
+  display:none;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: @yellow solid 3px !important;
+}
+
+
+
+.guideFieldWidget input[type="date"],
+.guideFieldWidget input[type="text"],
+.guideFieldWidget input[type="tel"],
+.guideFieldWidget input[type="number"],
+.guideFieldWidget input[type="password"],
+.guideFieldWidget select,
+.guideFieldWidget textarea {
+  	color: @text-colour;
+    width: 520px;
+}
+
+
+.guideFieldNode .guideFieldError{
+  width: 100%;
+  /*background-color: @error-background;*/
+  color: @error-colour;
+  //font-size: @gds-error-text-size;
+  //font-weight: 500;
+  margin-left: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding: 5px;
+  border: solid @error-colour 0px;
+  border-left-width: 3px;
+}
+
+.guideRadioButtonItem *,
+.guideCheckBoxItem *{
+  cursor: pointer;
+}
+
+.widget_XfaHMRCCheckbox{
+  	height: auto;
+    width: auto;
+}
+
+.bankAccountNumber > .guideFieldWidget input[type="text"],
+.bankAccountNumber > .guideFieldWidget input[type="number"]{
+	width: 100px;
+}
+
+.sortCode > .guideFieldWidget input[type="text"],
+.sortCode > .guideFieldWidget input[type="number"]{
+	width: 70px;
+}
+
+/* town/county */
+.townCounty > .guideFieldWidget input[type="text"]{
+	width: 270px;
+}
+
+.postCode > .guideFieldWidget input[type="text"]{
+	width: 135px;
+}
+
+.ninoNumber > .guideFieldWidget input[type="text"]{
+	width: 230px;
+}
+
+
+.taxYearEApril > .dropDownList {
+    font-size: 19px;
+    width: 70px;
+}
+
+.percentageField > .guideFieldWidget input[type="text"]{
+	width:70px;
+}
+
+.percentageField > .guideFieldWidget:after {
+	content:"%";
+}
+
+
+
+.PAYERef input[type="text"],
+.agentRef input[type="text"],
+.postCode input[type="text"],
+.ninoNumber input[type="text"]{
+	text-transform: uppercase;
+}
+
+////////////////////                 help messages         ///////////////////////*/
+.guideFieldNode .guideHelpQuestionMark:before {
+    content:"\e072 \2002";
+    float: left;
+
+}
+.guideFieldNode .guideHelpQuestionMark:after {
+    content:"Help";
+  	font-family: "nta", Arial, sans-serif;
+    float: left;
+    text-decoration: underline;
+}
+
+.PAYERef .guideHelpQuestionMark:after {
+    content:"Help with your Pay As Your Earn reference";
+  	font-family: "nta", Arial, sans-serif;
+    float: left;
+}
+
+.SARef .guideHelpQuestionMark:after {
+    content:"Help with your Unique Tax Payer Reference";
+  	font-family: "nta", Arial, sans-serif;
+    float: left;
+}
+
+.agentsReference .guideHelpQuestionMark:after {
+    content:"Help with your Agent's reference";
+  	font-family: "nta", Arial, sans-serif;
+    float: left;
+}
+
+
+////////////  buttons    ////////////*/
+.guidetoolbar {
+  height: auto;
+}
+
+.guidetoolbar .previousButtonHMRC .guideFieldWidget button,
+.guidetoolbar .backToSummary .guideFieldWidget button{
+
+    border-bottom-width: 0px;
+    background: rgba(255, 255, 255, 0);
+    color: @link-colour;
+    text-decoration: underline;
+    padding-left: 0;
+    outline: none !important;
+	&:hover{
+        border-bottom-width: 0px;
+        background: rgba(255,255,255,0);
+        color: @link-hover-colour;
+        text-decoration: underline;
+        padding-left: 0;
+    }
+	&:focus{
+        border-bottom-width: 0px;
+        border-radius: 0;
+        outline: 0;
+        background: rgba(255, 255, 255, 0);
+        color: @link-colour;
+        text-decoration: underline;
+        padding-left: 0;
+        > .iconButton-label{
+            background-color: @yellow;
+        }
+	}
+}
+
+.guidebutton .guideFieldWidget button {
+	padding: 5px 15px 5px 15px;
+}
+.guidetoolbar,
+.guidebutton{
+  	input[type="button"], button {
+        span{
+        	font-size: inherit;
+        }
+        text-transform: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        box-shadow:0 2px 0 #003518;
+    	height: auto;
+    	width: auto;
+
+    	&:hover {
+      		background-color: @button-hover-bg-color;
+    	}
+        &:active {
+      		box-shadow: none;
+            //margin: 3px 0 -3px 0;
+            top: 3px;
+    	}
+    	&:focus {
+    		background-color: @button-focus-bg-color;
+		}
+  	}
+}
+.previtemnav button,
+button.goSummary{
+	box-shadow: none;
+    margin: 0;
+    &:active {
+       	box-shadow: none;
+    	margin: 0;
+    }
+}
+
+#go-to-summary-link{
+	margin-left: 30px;
+}
+
+
+////////////////////////// Navigator /////////////////////////////////////*/
+
+
+.wizard-navigators{
+    white-space: normal;
+    width: 100%;
+    > li{
+        a, span {
+        	width: 100%;
+            padding: 0;
+        }
+        &:before{
+            display: none;
+        }
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        &.active{
+            color: black;
+            border-bottom: solid black 3px;
+        }
+	}
+}
+
+
+.navigator-toggle {
+  background-color: @navigation-button-bg-color;
+  color: white;
+  &:hover {
+    background-color: @navigation-button-bg-hover-color;
+    color: white;
+  }
+}
+
+
+.tab-navigators-vertical {
+  .tab-navigators-vertical {
+    border: none;
+    li, li .active {
+      color: @tabs-font-color;
+      background-color: @tabs-child-nav-bg-color;
+      > a, > a:hover {
+        color: @tabs-font-color;
+        background-color: @tabs-child-nav-bg-color;
+        font-size: @tabs-font-size;
+      }
+    }
+  }
+  > li {
+    border-bottom: 1px solid @border-colour;
+  }
+}
+
+
+/////////////////////////	Styling stuff for the edit mode navigation bar   ////////////////////////
+.triangleCommon() {
+  float: left;
+  display: block;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
+  content: "";
+  cursor: pointer;
+}
+
+.triangleNext() {
+  &:after {
+    .triangleCommon();
+    border-left: 20px solid @navigation-button-bg-color;
+  }
+}
+
+.trianglePrevious() {
+  &:before {
+    .triangleCommon();
+    border-right: 20px solid @navigation-button-bg-color;
+  }
+
+}
+
+
+
+
+.guidefieldVerticalAlignment,
+.guidefieldHorizontalAlignment{
+  float: left;
+}
+
+
+.guideFieldWidget.multiline {
+  min-height: 60px;
+}
+
+.guideFieldNode {
+  .clearfix();
+}
+
+
+
+.panel {
+  .box-shadow(none);
+}
+
+
+.guide-tab-scroller {
+  margin-top: 10px;
+}
+
+.guideFieldNode .guideHelpQuestionMark {
+    font-size: 1em;
+    padding-left: 6px;
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+    color: #007fa2;
+    background-color: inherit;
+  }
+
+// this is to give illusion of two column layout for label and widget //
+
+.guideFieldLabel {
+    padding-right: 30px;
+    white-space: normal;
+    word-break: break-word;
+    word-wrap: break-word;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+
+/* this is to match with the theme, label 20% widget 40% */
+.guideFieldNode .guideFieldDescription {
+	margin-top: 5px;
+    margin-left: 0;
+    border-radius: 0;
+    transition: 0;
+}
+.guideFieldError {
+    margin-left: 30%;
+    clear: both;
+}
+
+
+/* Summary Page CSS */
+
+
+
+
+////////////////////////////////// Summary Page CSS /////////////////////////////////////////
+
+.hmrc-summary
+{
+    padding: 0;
+    > div{
+        width: 100%;
+        border-collapse: collapse;
+        word-wrap: break-word;
+        div
+        {
+            width: 100%;
+            padding: 10px 0 10px 0;
+            font-size: 1em;
+            +.hmrc-s-grouped{
+                padding-top: 10px;
+                padding-bottom: 0;
+                +.hmrc-s-grouped{
+                    padding-top: 0;
+                }
+            }
+
+            &.hmrc-s-single{
+                border-bottom: solid 1px rgb(180, 180, 180);
+            }
+
+            &:first-child {
+                border-top: solid 1px rgb(180, 180, 180);
+            }
+
+        }
+    }
+}
+
+
+.hmrc-s-grouped + .hmrc-s-single{
+	border-top: solid 1px rgb(180, 180, 180);
+}
+
+.hmrc-summary h2 + div
+{
+	border-top: solid 1px rgb(180, 180, 180);
+}
+
+.hmrc-summary div + h2
+{
+    margin-top: 18px;
+
+}
+
+.hmrc-summary div
+{
+    vertical-align: top;
+}
+
+span.hmrc-s-label
+{
+    vertical-align: top;
+    width: 40%;
+    display:inline-block;
+}
+
+
+span.hmrc-s-data
+{
+    vertical-align: top;
+    width: 40%;
+    display:inline-block;
+}
+
+
+span.hmrc-s-link
+{
+    width: auto;
+    text-align: right;
+    display:inline-block;
+    float:right;
+    > a span {
+        height: 1px;
+        width: 1px;
+        position: absolute;
+        overflow: hidden;
+        top: auto;
+        left: -10000px;
+    }
+}
+
+
+.hmrc-summary #dynamic-content h2:last-child{
+	display: none;
+}
+
+
+.backToSummary{
+	margin-left: 30px;
+    top: 10px;
+    a {
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    .guideFieldWidget{
+        .goSummary{
+            position: relative !important; // needed to override the in line style added by AEM
+            line-height: 19px;
+        }
+        &.xfaButton{
+            height: auto;
+        }
+    }
+}
+
+
+//	fix for hmrc container
+.gridFluidLayout .row {
+  	margin-bottom: 0px;
+}
+
+.guideContainerWrapperNode.guideContainerNode.container{
+	padding: 0px 0px 0px 0px;
+	margin: auto;
+    width: 100%;
+}
+
+@import "mobileStyles";
+}
+

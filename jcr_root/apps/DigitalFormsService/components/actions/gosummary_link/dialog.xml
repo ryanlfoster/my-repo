@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="{Long}600"
+    title="Edit button"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <title
+                jcr:primaryType="nt:unstructured"
+                title="Title and text"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                        jcr:primaryType="nt:unstructured"
+                        path="/libs/fd/af/components/guidefield/dialog/items/title/items/name.infinity.json"
+                        xtype="cqinclude"/>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        path="/libs/fd/af/components/guidefield/dialog/items/title/items/title.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </title>
+            <script
+                jcr:primaryType="nt:unstructured"
+                labelWidth="{Long}160"
+                title="Script"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <clickExp
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Click expression"
+                        name="./clickExp"
+                        xtype="textfield"/>
+                    <visibleExp
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/fd/af/components/guidefield/dialog/items/script/items/visibleExp.infinity.json"
+                        xtype="cqinclude"/>
+                    <enabledExp
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/fd/af/components/guidefield/dialog/items/script/items/enabledExp.infinity.json"
+                        xtype="cqinclude"/>
+                    <navigationChangeExp
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Supported only for toolbar buttons"
+                        fieldLabel="Navigation change expression"
+                        name="./navigationChangeExp"
+                        xtype="textfield"/>
+                    <bindref
+                        jcr:primaryType="cq:Widget"
+                        path="/libs/fd/af/components/guidefield/dialog/items/script/items/bindref.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </script>
+            <styling
+                jcr:primaryType="nt:unstructured"
+                title="Styling"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <buttonType
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Style of button"
+                        name="./buttonType"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text="Default"
+                                value="button-default"/>
+                            <info
+                                jcr:primaryType="nt:unstructured"
+                                text="Info"
+                                value="button-informative"/>
+                            <warning
+                                jcr:primaryType="nt:unstructured"
+                                text="Warning"
+                                value="button-warning"/>
+                            <danger
+                                jcr:primaryType="nt:unstructured"
+                                text="Danger"
+                                value="button-alert"/>
+                        </options>
+                    </buttonType>
+                    <buttonSize
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Button size"
+                        name="./buttonSize"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text="Default"
+                                value="button-medium"/>
+                            <small
+                                jcr:primaryType="nt:unstructured"
+                                text="Small"
+                                value="button-small"/>
+                            <large
+                                jcr:primaryType="nt:unstructured"
+                                text="Large"
+                                value="button-large"/>
+                        </options>
+                    </buttonSize>
+                    <css
+                        jcr:primaryType="nt:unstructured"
+                        path="/libs/fd/af/components/guidefield/dialog/items/styling/items/css.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </styling>
+            <help
+                jcr:primaryType="nt:unstructured"
+                path="/libs/fd/af/components/guidefield/dialog/items/help.infinity.json"
+                xtype="cqinclude"/>
+            <accessibility
+                jcr:primaryType="nt:unstructured"
+                path="/libs/fd/af/components/guidefield/dialog/items/accessiblity.infinity.json"
+                xtype="cqinclude"/>
+        </items>
+    </items>
+</jcr:root>

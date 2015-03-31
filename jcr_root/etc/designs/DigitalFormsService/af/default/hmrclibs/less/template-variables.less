@@ -1,0 +1,179 @@
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+
+/////////////gds styling///////////*/
+/////////	fonts	///////////
+@font-size-base: 19px;
+@font-size-small: 16px;
+
+@font-size-label: 24px;
+@font-size-label-small: 18px;
+
+@font-size-lead: 24px;
+@font-size-lead-small: 18px;
+
+@font-size-supporting: 16px;
+@font-size-supporting-small: 14px;
+
+//@font-size-h1: 48px;
+//@font-size-h1-small: 32px;
+
+//@font-size-h2: 36px;
+//@font-size-h2-small: 24px;
+
+//@font-size-h3: 24px;
+//@font-size-h3-small: 18px;
+
+//@font-size-h4: @font-size-base;
+//@font-size-h4-small: @font-size-small;
+
+@font-size-h1: 36px;
+@font-size-h1-small: 24px;
+
+@font-size-h2: 24px;
+@font-size-h2-small: 18px;
+
+@font-size-h3: @font-size-base;
+@font-size-h3-small: @font-size-small;
+
+@font-size-section-heading: 27px;
+@font-size-section-heading-small: 20px;
+
+/////////////////////////////
+@footer-bg-colour: @black;
+
+@gds-body-text-size: 19px;
+@gds-error-text-size: 1em;
+
+@panel-font-size: @gds-body-text-size;
+
+@widgets-border-color: @grey-2;
+@widgets-border-radius: 0;
+@widgets-focus-border-color: @yellow;
+@widgets-mandatory-border-color: @widgets-border-color;
+
+@supplementary-text-colour: @grey-1;
+@supplementary-text-size: 0.9em;
+
+@button-text-colour: #fff;
+
+@prepopulated-background-colour: @grey-4;
+@prepopulated-border-colour: @grey-2;
+@prepopulated-text-colour: @grey-1;
+
+
+////////// nav colours   ////////////*/
+@initial-nav-color: @grey-3;
+@nav-inactive-colour: @grey-3;
+@nav-active-colour: @black;
+
+///////////  help box     ///////////*/
+@widgets-help-long-bg-color: @white;
+@widgets-help-long-border-color: 0;
+@widgets-help-long-border-indicator-color: @grey-2;
+
+
+
+//////////////////  footer styling //////////////////*/
+//@footer-bg-colour: @grey-3;
+
+
+
+//////////         alignment variables            ///////////////////*/
+
+/*main form elements underneath the progress bar*/
+//@left-alignment: 8%;
+
+// padding around individual fields */
+
+
+
+////------------------------------------*/
+@button-background-color: @button-colour;
+@button-border-color: rgb(40, 94, 142);
+@button-border-size: 0px;
+@button-padding: 10px 15px;
+@button-font-color: @button-text-colour;
+
+@container-bgColor: white;
+
+@widgets-font-color: red;
+@headerbar-background-color: rgb(0, 40, 60);
+@headerbar-font-color: #ffffff;
+
+@label-font-color: @text-colour;
+@label-font-size: @gds-body-text-size;
+@label-font-weight: normal;
+
+@mobileButtonIconTopMargin: -10px;
+
+@panel-description-font-size: 48px;
+
+@questionmark-font-color: @link-colour;
+@questionmark-hover-font-color: @link-hover-colour;
+
+@tabs-font-color: rgb(61, 61, 61);
+@tabs-font-size: 16px;
+@tabs-active-bg-color: rgb(0, 127, 162);
+@tabs-active-font-color: rgb(255, 255, 255);
+@tabs-border-thickness: 0px;
+@tabs-bg-color: rgb(241, 241, 241);
+@tabs-completed-bg-color: @tabs-bg-color;
+@tabs-completed-font-color: @nav-text-stepped-colour;
+@tabs-hover-font-color: rgb(255, 255, 255);
+@tabs-hover-bg-color: rgb(0, 127, 162);
+@tabs-stepped-font-color: @nav-text-stepped-colour;
+@tabs-stepped-bg-color: @tabs-bg-color;
+@navigator-bg-color: rgb(241, 241, 241);
+
+@wizard-tabs-bg-color: #ffffff;
+@wizard-tabs-completed-bg-color: @wizard-tabs-bg-color;
+@wizard-tabs-active-bg-color: @wizard-tabs-bg-color;
+
+@wizard-tabs-active-font-color: @text-colour;
+@wizard-tabs-completed-font-color: @nav-text-stepped-colour;
+@wizard-tabs-font-color: @nav-text-inactive-colour;
+
+@wizard-tabs-stepped-bg-color: @wizard-tabs-bg-color;
+@wizard-tabs-stepped-font-color: @nav-text-stepped-colour;
+
+@wizard-navigator-bg-color: @wizard-tabs-bg-color;
+
+@widgets-bg-color: #ffffff;
+@wizard-nav-bullet-border: rgb(0, 121, 193);
+@wizard-nav-hover-bullet-border: initial;
+@wizard-progress-bg-color: @nav-inactive-colour;
+
+
+/// theme-specific variables **/
+@button-focus-bg-color: @button-colour;
+@button-hover-bg-color: @green;
+@button-radius: 0px;
+@navigation-button-bg-color: rgb(213, 48, 88);
+@navigation-button-bg-hover-color: rgb(198, 38, 76);
+
+@initial-nav-color: @nav-inactive-colour;
+@active-nav-color: @nav-active-colour;
+@visited-nav-color: @nav-inactive-colour;
+
+@tabs-bifercating-border-color: rgb(8, 177, 207);
+@tabs-navigator-separator-color: rgb(221, 221, 221);
+@tabs-child-nav-bg-color: #ffffff;
+
+@widgets-disabled-bg-color: lighten(@widgets-bg-color, 20%);

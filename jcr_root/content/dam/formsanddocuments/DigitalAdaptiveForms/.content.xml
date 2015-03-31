@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OrderedFolder"
+    claim-a-tax-refundearchtext="[,,]"
+    claim-a-tax-refundsdtypeselector="[upload,search]"
+    finalearchtext="[,,]"
+    finalsdtypeselector="[upload,search]"
+    lcFolder="{Long}0"
+    R38_EN1earchtext="[,,]"
+    R38_EN1sdtypeselector="[upload,search]"
+    R38_ENearchtext="[,,]"
+    R38_ENsdtypeselector="[upload,search]"
+    R38earchtext="[,,]"
+    R38sdtypeselector="[upload,search]">
+    <claim-a-tax-refund/>
+    <final/>
+    <jcr:content/>
+</jcr:root>

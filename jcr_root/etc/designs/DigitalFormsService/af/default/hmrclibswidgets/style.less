@@ -1,0 +1,109 @@
+#master{
+@import "../hmrclibs/less/colours.less";
+
+@widget-bg-color: @grey-3;
+@widget-selected-bg-color: @white;
+@widget-selected-border-color: @black;
+@widget-outline-colour: @yellow;
+
+.focus {
+    -moz-box-shadow: 0px 0px 0px 3px @yellow;
+	-webkit-box-shadow: 0px 0px 0px 3px @yellow;
+	box-shadow: 0px 0px 0px 3px @yellow;
+}
+
+.bg(@clr) {
+	background:@clr;
+}
+
+.guideFieldWidget input[type="radio"],
+.guideFieldWidget input[type="checkbox"]{
+	height: 100%;
+}
+
+
+.guideFieldHorizontalAlignment {
+  float: left;
+}
+
+.guideFieldWidget.left{
+	float: none;
+}
+
+.XfaHMRCCheckbox {
+
+	display: table-cell;
+    .bg(@widget-bg-color);
+	padding: 0 0 0 15px;
+	border:1px solid @widget-bg-color; /*Fake border to stop radio button moving when clicked or hovered on*/
+	border-right:none; /*Fake border to stop radio button moving when clicked or hovered on*/
+
+    + .guideWidgetLabel{
+        display: table-cell;
+        .bg(@widget-bg-color);
+		padding: 10px 30px 10px 10px;
+        border:1px solid @widget-bg-color; /*Fake border to stop radio button moving when clicked or hovered on*/
+        border-left:none; /*Fake border to stop radio button moving when clicked or hovered on*/
+        vertical-align: middle;
+        float: none;
+    }
+
+    input[type="radio"]:focus,
+    input[type="checkbox"]:focus{
+		outline:none !important;
+    }
+
+
+
+    &.selected {
+        display: table-cell;
+        .bg(@widget-selected-bg-color);
+        border:1px solid black;
+        border-right: none;
+
+        + .guideWidgetLabel{
+            display: table-cell;
+            .bg(@widget-selected-bg-color);
+            border:1px solid black;
+            border-left: none;
+        }
+
+        input[type="radio"]:focus,
+        input[type="checkbox"]:focus{
+            outline:none !important;
+        }
+    }
+}
+
+.guideCheckBoxItem,
+.guideRadioButtonItem {
+    display: table;
+    margin-top: 10px;
+	margin-left: 3px;
+  	padding-top: 0;
+
+  	.guideFieldWidget {
+  		margin-top: 0px;
+	}
+
+    /*.guideWidgetLabel{
+        vertical-align: middle;
+    }*/
+}
+
+.guideCheckBoxItem:hover,
+.guideRadioButtonItem:hover {
+
+    .XfaHMRCCheckbox {
+		border:1px solid black;
+        border-right: none;
+    }
+
+	.guideWidgetLabel {
+        border:1px solid black;
+		border-left:none;
+    }
+}
+
+
+}

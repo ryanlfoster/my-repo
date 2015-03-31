@@ -1,0 +1,6 @@
+{
+    "sly.serverUrl": "http://192.168.182.131:4502",
+    "sly.remoteUser": "admin",
+    "sly.remoteUserPassword": "admin",
+    "sly.acceptSelfSignedCertificates": false
+}

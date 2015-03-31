@@ -1,0 +1,2158 @@
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+/* unvisited link */
+/* visited link */
+/** Global Error specific styling **/
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+/*main form elements underneath the progress bar*/
+.tooltip {
+  visibility: hidden;
+}
+a,
+a:link {
+  text-decoration: underline;
+}
+body,
+body #master {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  color: #0b0c0c;
+  line-height: 25px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+#content > article {
+  width: 100%;
+}
+#master {
+  /*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2014 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+
+  /*///////// legend override //////////*/
+
+  /* town/county */
+
+  /* this is to match with the theme, label 20% widget 40% */
+
+  /* Summary Page CSS */
+
+}
+#master .guideContainerNode {
+  background-color: #ffffff;
+  padding: 10px 16px 10px 16px;
+  margin: auto;
+}
+#master .guideFieldNode {
+  width: auto;
+  padding: 5px;
+  position: relative;
+}
+#master .guideFieldNode[data-disabled="true"] input[type="date"],
+#master .guideFieldNode[data-disabled="true"] input[type="text"],
+#master .guideFieldNode[data-disabled="true"] input[type="password"],
+#master .guideFieldNode[data-disabled="true"] select,
+#master .guideFieldNode[data-disabled="true"] input[type="checkbox"],
+#master .guideFieldNode[data-disabled="true"] input[type="radio"],
+#master .guideFieldNode[data-disabled="true"] textarea {
+  background-color: #ffffff;
+  border-color: #8a8e92;
+  color: #999999;
+}
+#master .guideFieldNode[data-mandatory="true"] input[type="date"],
+#master .guideFieldNode[data-mandatory="true"] input[type="text"],
+#master .guideFieldNode[data-mandatory="true"] input[type="password"],
+#master .guideFieldNode[data-mandatory="true"] select,
+#master .guideFieldNode[data-mandatory="true"] input[type="checkbox"],
+#master .guideFieldNode[data-mandatory="true"] input[type="radio"],
+#master .guideFieldNode[data-mandatory="true"] textarea {
+  border-color: #bfc1c3;
+}
+#master .guideFieldNode .guideFieldError {
+  color: #cccccc;
+  font-size: 19px;
+  padding-top: 5px;
+}
+#master .guideFieldNode .guideHelpQuestionMark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  color: #005ea5;
+  background-color: inherit;
+}
+#master .guideFieldNode .guideHelpQuestionMark:hover {
+  color: #2e8aca;
+  background-color: inherit;
+}
+#master .guideFieldNode .guideFieldDescription {
+  margin: 0px;
+  clear: both;
+  border-radius: 4px 4px 3px 3px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+#master .guideFieldNode .guideFieldDescription.long {
+  display: none;
+  padding: 10px 15px;
+  border: 1px solid 0;
+  border-left: 3px solid #bfc1c3;
+  background-color: #ffffff;
+}
+#master .guideFieldNode .guideFieldDescription.short {
+  color: #333333;
+  padding: 5px;
+  background-color: #ffffff;
+}
+#master .guideFieldNode .guideFieldDescription p {
+  margin: 0px;
+  padding: 0px;
+}
+#master .guideFieldNode .guideFieldWidget + .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+#master .guideFieldNode .guideFieldWidget + .tooltip.bottom .tooltip-inner {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  max-width: 350px;
+  width: auto;
+  white-space: normal;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+#master .guideFieldWidget.multiline {
+  height: 76px;
+}
+#master .guideFieldWidget.multiline > textarea {
+  resize: none;
+}
+#master .guideFieldWidget.fileUpload {
+  height: auto;
+}
+#master .guideFieldWidget {
+  width: 100%;
+  height: 38px;
+}
+#master .guideFieldWidget.left {
+  float: left;
+}
+#master .guideFieldWidget.listBoxWidget {
+  height: auto;
+}
+#master .guideFieldWidget.listBoxWidget > ol {
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  overflow: auto;
+  border: #bfc1c3 1px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-image: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+#master .guideFieldWidget.listBoxWidget > ol > li {
+  padding: 1px;
+}
+#master .guideFieldWidget.listBoxWidget > ol > li:focus {
+  outline-color: #ffbf47;
+}
+#master .guideFieldWidget input[type="date"],
+#master .guideFieldWidget input[type="text"],
+#master .guideFieldWidget input[type="password"],
+#master .guideFieldWidget select,
+#master .guideFieldWidget textarea {
+  width: 100%;
+  height: 100%;
+  border: #bfc1c3 1px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  font-size: 19px;
+  color: #ff0000;
+  line-height: 1.428571429;
+  background-image: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  padding: 2px;
+}
+#master .guideFieldWidget input[type="date"]:focus,
+#master .guideFieldWidget input[type="text"]:focus,
+#master .guideFieldWidget input[type="password"]:focus,
+#master .guideFieldWidget select:focus,
+#master .guideFieldWidget textarea:focus {
+  outline-color: #ffbf47;
+}
+#master .guideFieldWidget input[type="checkbox"],
+#master .guideFieldWidget input[type="radio"] {
+  margin: 0px;
+  height: 38px;
+  border: #bfc1c3 1px solid;
+  background-image: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+#master .guideFieldWidget input[type="checkbox"]:focus,
+#master .guideFieldWidget input[type="radio"]:focus {
+  outline-color: #ffbf47;
+}
+#master .guideFieldWidget input[type="button"],
+#master .guideFieldWidget button,
+#master .guideFieldWidget .button {
+  /*margin-top:@label-line-height * @label-font-size + @label-margin;*/
+
+  box-sizing: border-box;
+  cursor: pointer;
+  border-style: outset;
+  border-width: 0px;
+  border-color: #285e8e;
+  color: #ffffff;
+  background-color: #00823b;
+  padding: 10px 15px 10px 15px;
+  font-size: 19px;
+  line-height: normal;
+  border-radius: 0;
+}
+#master .guideFieldWidget input[type="button"]:active,
+#master .guideFieldWidget button:active,
+#master .guideFieldWidget .button:active {
+  border-style: inset;
+}
+#master .guideFieldWidget input[type="button"]:focus,
+#master .guideFieldWidget button:focus,
+#master .guideFieldWidget .button:focus {
+  outline-color: #285e8e;
+}
+#master .guideFieldWidget input[type="button"].button-large,
+#master .guideFieldWidget button.button-large,
+#master .guideFieldWidget .button.button-large {
+  padding: 10px 10px;
+  font-size: 24px;
+  line-height: normal;
+  border-radius: 0;
+}
+#master .guideFieldWidget input[type="button"].button-small,
+#master .guideFieldWidget button.button-small,
+#master .guideFieldWidget .button.button-small {
+  padding: 5px 5px;
+  font-size: 16px;
+  line-height: normal;
+  border-radius: 0;
+}
+#master .guideFieldWidget input[type="button"].button-informative,
+#master .guideFieldWidget button.button-informative,
+#master .guideFieldWidget .button.button-informative {
+  border-color: #46b8da;
+  color: #ffffff;
+  background-color: #5bc0de;
+}
+#master .guideFieldWidget input[type="button"].button-warning,
+#master .guideFieldWidget button.button-warning,
+#master .guideFieldWidget .button.button-warning {
+  border-color: #eea236;
+  color: #ffffff;
+  background-color: #f0ad4e;
+}
+#master .guideFieldWidget input[type="button"].button-alert,
+#master .guideFieldWidget button.button-alert,
+#master .guideFieldWidget .button.button-alert {
+  border-color: #d43f3a;
+  color: #ffffff;
+  background-color: #d9534f;
+}
+#master .guideFieldWidget input[type="button"] input[type="button"],
+#master .guideFieldWidget button input[type="button"],
+#master .guideFieldWidget .button input[type="button"],
+#master .guideFieldWidget input[type="button"] button,
+#master .guideFieldWidget button button,
+#master .guideFieldWidget .button button {
+  text-transform: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 0 #003518;
+  height: auto;
+  width: auto;
+}
+#master .guideFieldWidget input[type="button"] input[type="button"] span,
+#master .guideFieldWidget button input[type="button"] span,
+#master .guideFieldWidget .button input[type="button"] span,
+#master .guideFieldWidget input[type="button"] button span,
+#master .guideFieldWidget button button span,
+#master .guideFieldWidget .button button span {
+  font-size: inherit;
+}
+#master .guideFieldWidget input[type="button"] input[type="button"]:hover,
+#master .guideFieldWidget button input[type="button"]:hover,
+#master .guideFieldWidget .button input[type="button"]:hover,
+#master .guideFieldWidget input[type="button"] button:hover,
+#master .guideFieldWidget button button:hover,
+#master .guideFieldWidget .button button:hover {
+  background-color: #006435;
+}
+#master .guideFieldWidget input[type="button"] input[type="button"]:active,
+#master .guideFieldWidget button input[type="button"]:active,
+#master .guideFieldWidget .button input[type="button"]:active,
+#master .guideFieldWidget input[type="button"] button:active,
+#master .guideFieldWidget button button:active,
+#master .guideFieldWidget .button button:active {
+  box-shadow: none;
+  top: 3px;
+}
+#master .guideFieldWidget input[type="button"] input[type="button"]:focus,
+#master .guideFieldWidget button input[type="button"]:focus,
+#master .guideFieldWidget .button input[type="button"]:focus,
+#master .guideFieldWidget input[type="button"] button:focus,
+#master .guideFieldWidget button button:focus,
+#master .guideFieldWidget .button button:focus {
+  background-color: #00823b;
+}
+#master .guideFieldWidget input[type="button"].guide-fu-attach-button,
+#master .guideFieldWidget button.guide-fu-attach-button,
+#master .guideFieldWidget .button.guide-fu-attach-button {
+  /*margin-top:0px;*/
+
+}
+#master .guideFieldWidget .guide-tnc-checkbox {
+  overflow: auto;
+}
+#master .guideFieldWidget .guide-tnc-checkboxwidget.left {
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+#master .guideFieldWidget .guide-tnc-content {
+  border: #bfc1c3 1px solid;
+  overflow: auto;
+  padding: 5px;
+  padding-bottom: 3px;
+  background-image: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+#master .guideFieldLabel {
+  width: auto;
+  margin: 5px;
+}
+#master .guideFieldLabel label {
+  color: #0b0c0c;
+  font-size: 19px;
+  line-height: 1.428571429;
+  font-weight: normal;
+}
+#master .guideFieldLabel.top {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#master .guideFieldLabel.left {
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+#master .guideWidgetLabel {
+  margin: 5px;
+  float: left;
+}
+#master .guideWidgetLabel label {
+  color: #0b0c0c;
+  font-size: 19px;
+  line-height: 1.428571429;
+  font-weight: normal;
+}
+#master .guideWidgetLabel.right,
+#master .guideWidgetLabel.left {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#master .guideWidgetLabel.right label,
+#master .guideWidgetLabel.left label {
+  line-height: 38px;
+}
+#master .guideWidgetLabel.right {
+  margin-right: 0px;
+}
+#master .guideWidgetLabel.left {
+  margin-left: 0px;
+}
+#master .guideImage img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: inherit;
+}
+#master .guideButton .iconButton-icon {
+  height: 25px;
+  width: 25px;
+  display: none;
+  background-repeat: no-repeat;
+}
+#master .guideButton .reset .iconButton-icon {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/reset-ip.png');
+}
+#master .guideButton .submit .iconButton-icon {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/submit-ip.png');
+}
+#master .guideButton .save .iconButton-icon {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/save-ip.png');
+}
+#master .guideButton .moveNext .iconButton-icon {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/moveNext-ip.png');
+}
+#master .guideButton .movePrev .iconButton-icon {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/movePrev-ip.png');
+}
+#master .guideButton .fileattachmentlisting .iconButton-icon {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/fileattachmentlisting-ip.png');
+}
+#master div.guideScribble div.guideFieldWidget {
+  border: #bfc1c3 1px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+#master div.guideScribble div.guideFieldWidget:focus {
+  outline-color: #ffbf47;
+}
+#master div.guideScribble div.guideFieldWidget img {
+  width: 100%;
+  height: 100%;
+}
+#master .guideFieldHorizontalAlignment {
+  display: inline-block;
+  clear: none;
+}
+#master .guideFieldVerticalAlignment {
+  display: block;
+  clear: both;
+}
+#master .datepicker-calendar-icon {
+  background-image: url(../../../../../../../clientlibs/fd/af/guidesAuthoring/guidesDataSidekickTab/images/C_datetimeedit_md.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#master .guideCheckBoxGroupItems,
+#master .guideRadioButtonGroupItems {
+  width: 100%;
+}
+#master .guideCheckBoxGroupItems:before,
+#master .guideRadioButtonGroupItems:before,
+#master .guideCheckBoxGroupItems:after,
+#master .guideRadioButtonGroupItems:after {
+  content: " ";
+  display: table;
+}
+#master .guideCheckBoxGroupItems:after,
+#master .guideRadioButtonGroupItems:after {
+  clear: both;
+}
+#master .guideCheckBoxItem,
+#master .guideRadioButtonItem {
+  margin-right: 5px;
+}
+#master .guideCheckBoxItem .guideFieldWidget,
+#master .guideRadioButtonItem .guideFieldWidget {
+  width: auto;
+}
+#master ul.guide-fu-fileItemList {
+  padding-left: 0px;
+  margin: 0px;
+  list-style: none;
+}
+#master li.guide-fu-fileItem {
+  display: block;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+  color: #000000;
+}
+#master span.guide-fu-filePreview {
+  margin-right: 10px;
+  float: left;
+  color: #000000;
+}
+#master span.guide-fu-fileName {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#master div.guide-fu-comment[contenteditable="true"] {
+  border: 1px solid;
+  margin-top: 5px;
+}
+#master div.guide-fu-comment {
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+  padding: 2px 30px 2px 5px;
+  word-break: break-word;
+  border-style: groove;
+}
+#master div.fileAttachmentListingCloseButton {
+  float: right;
+}
+#master div.guideFileUpload div.guideFieldWidget > input[type="file"] {
+  visibility: hidden !important;
+  top: -2000px !important;
+  left: -2000px !important;
+  position: absolute !important;
+}
+#master div.guideFileUpload div.guideFieldWidget {
+  overflow: auto;
+}
+#master div.guideFileUpload div.guideFieldWidget label {
+  background-color: #00283c;
+  cursor: pointer;
+  border-color: buttonface;
+  color: #ffffff;
+  padding: 10px 15px 10px 15px;
+  font-size: 14px;
+  line-height: normal;
+  border-radius: 0;
+  height: 38px;
+}
+#master .guide-tnc-document-unvisited {
+  color: #ff0000;
+}
+#master .guide-tnc-document-visited {
+  color: #c0c0c0;
+}
+#master div.guide-tnc-content,
+#master div.guide-tnc-link {
+  height: 100%;
+  max-height: inherit;
+}
+#master div.guideTermsAndConditions div.guideFieldWidget {
+  max-height: 100px;
+  height: auto;
+}
+#master .guidePanelNode {
+  background-color: #ffffff;
+  font-size: 19px;
+  color: #333333;
+  padding: 10px 10px;
+  width: 100%;
+}
+#master .guidePanelDescription {
+  font-size: 48px;
+  color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#master .guidePanelDescription.long {
+  display: none;
+  background-color: #d3d3d3;
+  border-top-color: #00bfff;
+  border-top-style: ridge;
+  font-size: 15px;
+}
+#master .guidePanelDescription > .glyphicon {
+  color: #005ea5;
+  background-color: inherit;
+}
+#master .guidePanelDescription > .glyphicon:hover {
+  color: #2e8aca;
+  background-color: inherit;
+}
+#master .guide-header-bar {
+  background-color: #00283c;
+  color: #ffffff;
+  padding: 0px;
+}
+#master .guide-header-bar:before,
+#master .guide-header-bar:after {
+  content: " ";
+  display: table;
+}
+#master .guide-header-bar:after {
+  clear: both;
+}
+#master .guide-header-bar .guide-breadcrumb {
+  float: left;
+  padding-top: 10px;
+  padding-bototm: 10px;
+}
+#master .guide-header-bar .guide-nav-toolbar {
+  float: right;
+}
+#master .guide-header-bar .guide-nav-toolbar:before,
+#master .guide-header-bar .guide-nav-toolbar:after {
+  content: " ";
+  display: table;
+}
+#master .guide-header-bar .guide-nav-toolbar:after {
+  clear: both;
+}
+#master .guide-header-bar .guide-nav-toolbar .guide-nav-toolbar-button {
+  float: left;
+}
+#master .navigator-toggle {
+  margin-bottom: 13px;
+}
+#master .guide-nav-toolbar-button {
+  margin-right: 0px;
+  margin-left: 0px;
+  overflow: hidden;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  color: #999999;
+}
+#master .guide-nav-toolbar-button:hover {
+  color: #333333;
+}
+#master .guide-tab-scroller {
+  background-repeat: no-repeat;
+  height: 44px;
+  cursor: pointer;
+}
+#master .guide-tab-scroller-previous {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/previous.png');
+  background-position: left bottom;
+}
+#master .guide-tab-scroller-next {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/next.png');
+  background-position: right bottom;
+}
+#master .hide-tab-scroll {
+  display: none;
+  visibility: hidden;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #master .tab-navigators-stamped .guide-tab-stamp-list {
+  width: 30px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+#master .tab-navigators-stamped .guide-tab-stamp-list:hover {
+  width: 16.66666667%;
+}
+#master .tab-navigators-stamped .tab-navigators > li {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+}
+@media (max-width: 767px) {
+  #master [id$="_guide-item-container"] {
+  overflow-x: auto;
+}
+
+}
+#master .guidetoolbar {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 35px;
+}
+#master .guidetoolbar input[type="button"],
+#master .guidetoolbar button,
+#master .guidetoolbar .button {
+  box-sizing: border-box;
+  cursor: pointer;
+  border-style: outset;
+  border-width: 0px;
+  border-color: #285e8e;
+  color: #ffffff;
+  background-color: #00823b;
+  padding: 10px 15px 10px 15px;
+  font-size: 19px;
+  line-height: normal;
+  border-radius: 0;
+  width: auto;
+}
+#master .guidetoolbar input[type="button"]:active,
+#master .guidetoolbar button:active,
+#master .guidetoolbar .button:active {
+  border-style: inset;
+}
+#master .guidetoolbar input[type="button"]:focus,
+#master .guidetoolbar button:focus,
+#master .guidetoolbar .button:focus {
+  outline-color: #285e8e;
+}
+#master .guidetoolbar input[type="button"].button-large,
+#master .guidetoolbar button.button-large,
+#master .guidetoolbar .button.button-large {
+  padding: 10px 10px;
+  font-size: 24px;
+  line-height: normal;
+  border-radius: 0;
+}
+#master .guidetoolbar input[type="button"].button-small,
+#master .guidetoolbar button.button-small,
+#master .guidetoolbar .button.button-small {
+  padding: 5px 5px;
+  font-size: 16px;
+  line-height: normal;
+  border-radius: 0;
+}
+#master .guidetoolbar input[type="button"].button-informative,
+#master .guidetoolbar button.button-informative,
+#master .guidetoolbar .button.button-informative {
+  border-color: #46b8da;
+  color: #ffffff;
+  background-color: #5bc0de;
+}
+#master .guidetoolbar input[type="button"].button-warning,
+#master .guidetoolbar button.button-warning,
+#master .guidetoolbar .button.button-warning {
+  border-color: #eea236;
+  color: #ffffff;
+  background-color: #f0ad4e;
+}
+#master .guidetoolbar input[type="button"].button-alert,
+#master .guidetoolbar button.button-alert,
+#master .guidetoolbar .button.button-alert {
+  border-color: #d43f3a;
+  color: #ffffff;
+  background-color: #d9534f;
+}
+#master .guidetoolbar input[type="button"] input[type="button"],
+#master .guidetoolbar button input[type="button"],
+#master .guidetoolbar .button input[type="button"],
+#master .guidetoolbar input[type="button"] button,
+#master .guidetoolbar button button,
+#master .guidetoolbar .button button {
+  text-transform: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 0 #003518;
+  height: auto;
+  width: auto;
+}
+#master .guidetoolbar input[type="button"] input[type="button"] span,
+#master .guidetoolbar button input[type="button"] span,
+#master .guidetoolbar .button input[type="button"] span,
+#master .guidetoolbar input[type="button"] button span,
+#master .guidetoolbar button button span,
+#master .guidetoolbar .button button span {
+  font-size: inherit;
+}
+#master .guidetoolbar input[type="button"] input[type="button"]:hover,
+#master .guidetoolbar button input[type="button"]:hover,
+#master .guidetoolbar .button input[type="button"]:hover,
+#master .guidetoolbar input[type="button"] button:hover,
+#master .guidetoolbar button button:hover,
+#master .guidetoolbar .button button:hover {
+  background-color: #006435;
+}
+#master .guidetoolbar input[type="button"] input[type="button"]:active,
+#master .guidetoolbar button input[type="button"]:active,
+#master .guidetoolbar .button input[type="button"]:active,
+#master .guidetoolbar input[type="button"] button:active,
+#master .guidetoolbar button button:active,
+#master .guidetoolbar .button button:active {
+  box-shadow: none;
+  top: 3px;
+}
+#master .guidetoolbar input[type="button"] input[type="button"]:focus,
+#master .guidetoolbar button input[type="button"]:focus,
+#master .guidetoolbar .button input[type="button"]:focus,
+#master .guidetoolbar input[type="button"] button:focus,
+#master .guidetoolbar button button:focus,
+#master .guidetoolbar .button button:focus {
+  background-color: #00823b;
+}
+#master .guidetoolbar .modal-body input[type="button"],
+#master .guidetoolbar .modal-body button,
+#master .guidetoolbar .modal-body .button {
+  width: auto;
+}
+#master .guidetoolbar > [id$="_guide-item"] {
+  display: inline-block;
+}
+#master .guide-element-hide {
+  display: none;
+}
+#master .guide-element-position-absolute {
+  position: absolute !important;
+}
+#master .guideGlobalErrors {
+  background-color: #fdf7f7;
+  border-color: #d9534f;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #a94442;
+  margin: 10px 16px 10px 16px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+#master .guideError {
+  margin-bottom: 15px;
+}
+#master .guideError div {
+  cursor: pointer;
+  color: #a94442;
+  margin-left: 5px;
+  padding-left: 5px;
+  display: inline-block;
+}
+#master .guideError span {
+  color: #a94442;
+}
+#master .navigator-toggle {
+  border: none;
+  float: right;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  color: #3d3d3d;
+  background-color: #f1f1f1;
+}
+#master .navigator-toggle:hover {
+  color: #ffffff;
+  background-color: #007fa2;
+}
+#master .tab-navigators {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+#master .tab-navigators:before,
+#master .tab-navigators:after {
+  content: " ";
+  display: table;
+}
+#master .tab-navigators:after {
+  clear: both;
+}
+#master .tab-navigators > li {
+  position: relative;
+  float: left;
+  display: block;
+  border: solid 0px #000000;
+}
+#master .tab-navigators > li.stepped > a {
+  color: #0661a7;
+  background-color: #f1f1f1;
+}
+#master .tab-navigators > li.completed > a {
+  color: #0661a7;
+  background-color: #f1f1f1;
+}
+#master .tab-navigators > li.active > a {
+  color: #ffffff;
+  background-color: #007fa2;
+}
+#master .tab-navigators > li > a {
+  margin: 0px 2px 0px 2px;
+  display: block;
+  padding: 10px 16px 10px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3d3d3d;
+  background-color: #f1f1f1;
+}
+#master .tab-navigators > li > a:hover {
+  color: #ffffff;
+  background-color: #007fa2;
+}
+#master .tab-navigators > li.active > ul.tab-navigators {
+  display: block;
+}
+#master .tab-navigators > li > ul.tab-navigators {
+  display: none;
+}
+#master .tab-navigators-mobile > li {
+  float: none;
+}
+#master .tab-navigators-mobile > li > a {
+  width: 100%;
+  margin: 0px 0px 2px 0px;
+}
+#master .tab-navigators-mobile > li.active > .tab-navigators-mobile li {
+  padding-left: 5px;
+}
+#master .tab-navigators-vertical > li {
+  float: none;
+}
+#master .tab-navigators-vertical > li > a {
+  width: 100%;
+  margin: 0px 0px 2px 0px;
+}
+#master .tab-navigators-vertical > li.active > .tab-navigators-vertical li {
+  padding-left: 5px;
+}
+#master #guide-mobile-navigator-wrapper {
+  position: relative;
+}
+#master #guide-mobile-navigator {
+  position: absolute;
+  left: 60%;
+  right: 0px;
+  z-index: 1000;
+  overflow: hidden;
+  height: 0px;
+}
+#master .wizard-navigators {
+  counter-reset: item;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+#master .wizard-navigators > li {
+  counter-increment: item;
+  display: inline-block;
+  border: solid 0px #000000;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-right: 10px;
+  position: relative;
+  color: #6f777b;
+  background-color: #ffffff;
+}
+#master .wizard-navigators > li:before {
+  content: counter(item) ".";
+  float: left;
+  border: 1px solid #0079c1;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+  padding: 2px 2px 2px 4px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 12px;
+}
+#master .wizard-navigators > li .indicator {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  margin-left: 6px;
+  border-radius: 0;
+  margin-top: -39px;
+  z-index: 20;
+}
+#master .wizard-navigators > li > a {
+  color: inherit;
+  display: table;
+  padding: 0px 0px 0px 36px;
+  font-size: inherit;
+  text-decoration: none;
+  word-break: break-word;
+  white-space: normal;
+}
+#master .wizard-navigators > li.stepped {
+  color: #0661a7;
+  background-color: #ffffff;
+}
+#master .wizard-navigators > li.completed {
+  color: #0661a7;
+  background-color: #ffffff;
+}
+#master .wizard-navigators > li.active {
+  color: #0b0c0c;
+  background-color: #ffffff;
+}
+#master .wizard-navigators > li.active .indicator {
+  border-bottom-color: #0b0c0c;
+}
+#master [id$="_guide-item-container"] > [id$="_guide-item"] {
+  display: none;
+}
+#master [id$="_guide-item-container"] > [id$="_guide-item"].active {
+  display: block;
+}
+#master .wizard .progress {
+  height: 3px;
+  margin-top: 9px;
+  margin-right: 3px;
+  background: #dee0e2;
+  border-radius: 0;
+}
+#master .wizard .progress-bar-warning {
+  background: #d53058;
+}
+#master .wizard-nav-arrow {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 200px;
+  cursor: pointer;
+}
+#master .wizard-nav-prev {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/previous-page.png');
+}
+#master .wizard-nav-next {
+  background-image: url('../../../../../../../clientlibs/fd/af/images/next-page.png');
+}
+#master .wizard-tab-disabled {
+  opacity: 0.5;
+}
+@media (max-width: 991px) {
+  #master .wizard-nav-arrow {
+  display: none;
+}
+
+}
+#master .navigator-toggle {
+  border: none;
+  float: right;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  color: #3d3d3d;
+  background-color: #f1f1f1;
+}
+#master .navigator-toggle:hover {
+  color: #ffffff;
+  background-color: #007fa2;
+}
+#master .accordion-navigators {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+#master .accordion-navigators:before,
+#master .accordion-navigators:after {
+  content: " ";
+  display: table;
+}
+#master .accordion-navigators:after {
+  clear: both;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] {
+  display: block;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader {
+  display: block;
+  border: solid 0px #000000;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/expand.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 8px 8px 8px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #0661a7;
+  background-color: #f1f1f1;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a:hover {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/expand_hover.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a > .repeatableButtons {
+  display: inline-block;
+  float: right;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a > .repeatableButtons > button {
+  background-color: initial;
+  background-repeat: no-repeat;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a > .repeatableButtons > button.Add {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/add.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a > .repeatableButtons > button.Remove {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/delete.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a > .repeatableButtons > button:hover.Add {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/add_hover.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideHeader > a > .repeatableButtons > button:hover.Remove {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/delete_hover.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] > .guideContent {
+  display: none;
+  cursor: default;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"].active > .guideHeader > a {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/collapse_white.png);
+  color: #ffffff;
+  background-color: #007fa2;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"].active > .guideHeader > a:hover {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/collapse_white_hover.png);
+  color: #ffffff;
+  background-color: #007fa2;
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"].active > .guideHeader > a > .repeatableButtons > button.Add {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/add_white.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"].active > .guideHeader > a > .repeatableButtons > button.Remove {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/delete_white.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"].active > .guideHeader > a > .repeatableButtons > button:hover.Add {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/add_white_hover.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"].active > .guideHeader > a > .repeatableButtons > button:hover.Remove {
+  background-image: url(../../../../../../../clientlibs/fd/af/images/delete_white_hover.png);
+}
+#master .accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"].active > .guideContent {
+  display: block;
+}
+@media (max-width: 767px) {
+  #master .mobileScrollIndicator {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../../../../../clientlibs/fd/af/images/more-arrow.png");
+  background-repeat: no-repeat;
+  z-index: 55;
+}
+#master .mobileToolbar {
+  position: fixed;
+  bottom: 0px;
+  top: inherit;
+  left: 0px;
+  right: 0px;
+  background-color: #013853;
+  margin-bottom: 0px;
+  width: 100%;
+  z-index: 100;
+}
+#master .mobileToolbar .guideButton button {
+  background-color: transparent;
+}
+#master .mobileToolbar .guideButton .iconButton-icon {
+  display: inline-block;
+  margin-top: -10px;
+}
+#master .mobileToolbar .guideButton .iconButton-label {
+  display: none;
+}
+#master .guideContainerNode {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+}
+#master .version {
+  font-size: 10px;
+  color: #a0a0a0;
+  text-align: left;
+}
+#master .hiddenField {
+  display: none;
+}
+#master legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 0;
+  line-height: 0;
+  color: 0;
+  border: 0;
+  border-bottom: 0;
+}
+#master label {
+  margin-bottom: 0;
+}
+#master .guidePanelNode {
+  padding: 0;
+}
+#master .PanelContainer {
+  left: 0;
+  padding: 0;
+}
+#master .guideFieldNode {
+  padding: 0;
+}
+#master .guidefield {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#master .panel {
+  margin-bottom: 0;
+  border: none;
+}
+#master .guideContainerWrapperNode.guideContainerNode {
+  padding: 10px 90px 10px 90px;
+  margin: auto;
+}
+#master .guideContainerNode {
+  padding: 10px 0px 10px 0px;
+}
+#master .parbase.ErrorSummary {
+  padding: 0 30px 0 30px;
+  max-width: 1020px;
+  margin: auto;
+}
+#master .guidetextdraw .guideFieldNode,
+#master .guideFieldLabel {
+  width: 100%;
+  max-width: 570px;
+}
+#master .infoText {
+  background: url(../../images/icon-important.png) no-repeat scroll 0.3em 0.5em;
+  padding-left: 45px;
+  min-height: 45px;
+}
+#master .infoText p {
+  padding: 14px 0 0 10px;
+  word-wrap: break-word;
+}
+#master .insetText {
+  border-left: 4px solid #bfc1c3;
+  padding: 10px 5px 10px 15px;
+  margin: 1em 5px 1em 5px;
+}
+#master .insetText p {
+  margin: 0.1em 0 0.1em 0;
+  max-width: 30em;
+}
+#master .guidetextdraw *:focus {
+  outline: none;
+}
+#master h1,
+#master .h1,
+#master h2,
+#master .h2,
+#master h3,
+#master .h3,
+#master h4,
+#master .h4 {
+  margin-top: 0;
+  margin-bottom: 18;
+}
+#master a,
+#master a:link {
+  font-size: 19px;
+  color: #005ea5;
+  outline: none;
+  text-decoration: underline;
+  background-color: none;
+}
+#master a:hover,
+#master a:link:hover {
+  color: #2e8aca;
+}
+#master a:focus,
+#master a:link:focus {
+  outline: none;
+  background-color: #ffbf47;
+}
+#master .guideFieldWidget input[type="text"],
+#master .guideFieldWidget textarea {
+  font-size: 19px;
+}
+#master .leadText p {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+#master .bodyCopy p {
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 25px;
+}
+#master .supportingText p {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+#master .guidePanelDescription {
+  font-size: 2em;
+  font-weight: 700;
+  color: #0b0c0c;
+}
+#master h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+#master h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+#master h3 {
+  font-size: 19px;
+  font-weight: 700;
+}
+#master .progress-title {
+  color: #6f777b;
+  font-size: 27px;
+}
+#master .infoText p {
+  font-size: 19px;
+}
+#master .insetText p {
+  font-size: 19px;
+}
+#master .miscHeading {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+#master .guideFieldNode .guideFieldLabel label {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+#master .guideFieldNode .guideWidgetLabel label {
+  font-size: 19px;
+}
+#master .guideFieldNode .guideFieldDescription.short {
+  padding: 5px 5px 5px 0;
+}
+#master .guideFieldNode .guideFieldDescription p {
+  font-size: 19px;
+}
+#master .guideFieldLabel label {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+#master .supplementary-text {
+  color: #6f777b;
+  font-size: 19px;
+}
+#master .guideFieldNode .guideFieldError {
+  color: #df3034;
+  font-size: 19px;
+  font-weight: 500;
+}
+#master .guidetoolbar button,
+#master .guidetoolbar #backlink,
+#master .guideButton button.button {
+  font-size: 19px;
+}
+#master .guideFieldNode .guideHelpQuestionMark {
+  font-size: 19px;
+  color: #007fa2;
+}
+#master .hmrc-summary > div {
+  font-size: 19px;
+}
+#master .insetFields {
+  padding: 0 5px 5px 5px;
+  margin: 0 5px 10px 5px;
+  border-left: solid 3px #bfc1c3;
+}
+#master .guideFieldWidget input[type="tel"],
+#master .guideFieldWidget input[type="number"] {
+  width: 100%;
+  height: 100%;
+  border: #bfc1c3 1px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  font-size: 19px;
+  color: #ff0000;
+  line-height: 1.428571429;
+  background-image: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  padding: 2px;
+}
+#master .guideFieldWidget input[type="number"]::-webkit-inner-spin-button,
+#master .guideFieldWidget input[type="number"]::-webkit-outer-spin-button,
+#master .guideFieldWidget input[type="tel"]::-webkit-inner-spin-button,
+#master .guideFieldWidget input[type="tel"]::-webkit-outer-spin-button {
+  -webkit-appearance: normal;
+  /* Safari and Chrome */
+
+  -moz-appearance: normal;
+  /* Firefox */
+
+  appearance: normal;
+  margin: 0;
+}
+#master input::-webkit-inner-spin-button,
+#master input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+
+  -moz-appearance: none;
+  /* Firefox */
+
+  appearance: none;
+  margin: 0;
+}
+#master .noOutline input:focus {
+  /* makes the outline not visible. This is used for read only fields where we dont want a highlight*/
+
+  outline: none !important;
+}
+#master .prepopulated.guideFieldNode[data-disabled="true"] input[type="text"] {
+  color: #6f777b;
+  background-color: #f8f8f8;
+  border-color: #bfc1c3;
+  border-width: 1px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#master .prepopulated.guideFieldNode[data-disabled="true"] input:focus {
+  outline: none !important;
+}
+#master .guideFieldWidget input[type="checkbox"],
+#master .guideFieldWidget input[type="radio"] {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+#master .guideFieldNode[data-mandatory="true"] input[type="date"],
+#master .guideFieldNode[data-mandatory="true"] input[type="text"],
+#master .guideFieldNode[data-mandatory="true"] input[type="tel"],
+#master .guideFieldNode[data-mandatory="true"] input[type="number"],
+#master .guideFieldNode[data-mandatory="true"] input[type="password"],
+#master .guideFieldNode[data-mandatory="true"] select,
+#master .guideFieldNode[data-mandatory="true"] textarea {
+  border-color: #bfc1c3;
+}
+#master .guideFieldNode[data-mandatory="true"] input[type="checkbox"],
+#master .guideFieldNode[data-mandatory="true"] input[type="radio"] {
+  border-color: rgba(255, 255, 255, 0);
+}
+#master .radio,
+#master .checkbox {
+  padding-left: 0;
+}
+#master .guideFieldWidget input[type="checkbox"],
+#master .guideFieldWidget input[type="radio"] {
+  outline: none !important;
+}
+#master .guideFieldNode.validation-failure .guideFieldLabel,
+#master .guideFieldNode.validation-failure .textField,
+#master .guideFieldNode.validation-failure .guideRadioButtonGroupItems,
+#master .guideFieldNode.validation-failure .guideCheckBoxGroupItems,
+#master .guideFieldNode.validation-failure .dropDownList {
+  /*background-color: @error-background;*/
+
+  border: solid #df3034 0px;
+  border-left-width: 3px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+#master .global-error-div {
+  /*background-color: @error-background;*/
+
+  color: #df3034;
+  border: solid 3px #df3034;
+  padding: 20px 20px 0px 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1070px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#master .global-error-div h4 {
+  color: #df3034;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+#master .global-error-div .error-item {
+  margin-bottom: 15px;
+}
+#master .global-error-div .error-item .error-text:before {
+  content: "\2022";
+  float: left;
+}
+#master .global-error-div .error-item .error-text {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 4px;
+  padding-left: 0;
+  margin-left: 0;
+}
+#master .global-error-div .error-item .error-text:hover {
+  text-decoration: underline;
+}
+#master .global-error-div.no-validation-errors {
+  display: none;
+}
+#master .global-error-div .error-item .close {
+  margin-top: 2px;
+}
+#master .global-error-div .error-item .close:hover {
+  color: #4c0c00;
+}
+#master .redOutline {
+  border: #df3034 solid 5px;
+}
+#master .guideFieldNode .guideFieldDescription.short {
+  background-color: rgba(255, 255, 255, 0);
+  /*width: 400px;*/
+
+}
+#master .guideFieldNode .guideFieldDescription p {
+  color: #6f777b;
+}
+#master .guidePanelNode {
+  color: #0b0c0c;
+}
+#master div .guideFieldError:empty {
+  display: none;
+}
+#master input:focus,
+#master button:focus,
+#master textarea:focus,
+#master select:focus {
+  outline: #ffbf47 solid 3px !important;
+}
+#master .guideFieldWidget input[type="date"],
+#master .guideFieldWidget input[type="text"],
+#master .guideFieldWidget input[type="tel"],
+#master .guideFieldWidget input[type="number"],
+#master .guideFieldWidget input[type="password"],
+#master .guideFieldWidget select,
+#master .guideFieldWidget textarea {
+  color: #0b0c0c;
+  width: 520px;
+}
+#master .guideFieldNode .guideFieldError {
+  width: 100%;
+  /*background-color: @error-background;*/
+
+  color: #df3034;
+  margin-left: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding: 5px;
+  border: solid #df3034 0px;
+  border-left-width: 3px;
+}
+#master .guideRadioButtonItem *,
+#master .guideCheckBoxItem * {
+  cursor: pointer;
+}
+#master .widget_XfaHMRCCheckbox {
+  height: auto;
+  width: auto;
+}
+#master .bankAccountNumber > .guideFieldWidget input[type="text"],
+#master .bankAccountNumber > .guideFieldWidget input[type="number"] {
+  width: 100px;
+}
+#master .sortCode > .guideFieldWidget input[type="text"],
+#master .sortCode > .guideFieldWidget input[type="number"] {
+  width: 70px;
+}
+#master .townCounty > .guideFieldWidget input[type="text"] {
+  width: 270px;
+}
+#master .postCode > .guideFieldWidget input[type="text"] {
+  width: 135px;
+}
+#master .ninoNumber > .guideFieldWidget input[type="text"] {
+  width: 230px;
+}
+#master .taxYearEApril > .dropDownList {
+  font-size: 19px;
+  width: 70px;
+}
+#master .percentageField > .guideFieldWidget input[type="text"] {
+  width: 70px;
+}
+#master .percentageField > .guideFieldWidget:after {
+  content: "%";
+}
+#master .PAYERef input[type="text"],
+#master .agentRef input[type="text"],
+#master .postCode input[type="text"],
+#master .ninoNumber input[type="text"] {
+  text-transform: uppercase;
+}
+#master .guideFieldNode .guideHelpQuestionMark:before {
+  content: "\e072 \2002";
+  float: left;
+}
+#master .guideFieldNode .guideHelpQuestionMark:after {
+  content: "Help";
+  font-family: "nta", Arial, sans-serif;
+  float: left;
+  text-decoration: underline;
+}
+#master .PAYERef .guideHelpQuestionMark:after {
+  content: "Help with your Pay As Your Earn reference";
+  font-family: "nta", Arial, sans-serif;
+  float: left;
+}
+#master .SARef .guideHelpQuestionMark:after {
+  content: "Help with your Unique Tax Payer Reference";
+  font-family: "nta", Arial, sans-serif;
+  float: left;
+}
+#master .agentsReference .guideHelpQuestionMark:after {
+  content: "Help with your Agent's reference";
+  font-family: "nta", Arial, sans-serif;
+  float: left;
+}
+#master .guidetoolbar {
+  height: auto;
+}
+#master .guidetoolbar .previousButtonHMRC .guideFieldWidget button,
+#master .guidetoolbar .backToSummary .guideFieldWidget button {
+  border-bottom-width: 0px;
+  background: rgba(255, 255, 255, 0);
+  color: #005ea5;
+  text-decoration: underline;
+  padding-left: 0;
+  outline: none !important;
+}
+#master .guidetoolbar .previousButtonHMRC .guideFieldWidget button:hover,
+#master .guidetoolbar .backToSummary .guideFieldWidget button:hover {
+  border-bottom-width: 0px;
+  background: rgba(255, 255, 255, 0);
+  color: #2e8aca;
+  text-decoration: underline;
+  padding-left: 0;
+}
+#master .guidetoolbar .previousButtonHMRC .guideFieldWidget button:focus,
+#master .guidetoolbar .backToSummary .guideFieldWidget button:focus {
+  border-bottom-width: 0px;
+  border-radius: 0;
+  outline: 0;
+  background: rgba(255, 255, 255, 0);
+  color: #005ea5;
+  text-decoration: underline;
+  padding-left: 0;
+}
+#master .guidetoolbar .previousButtonHMRC .guideFieldWidget button:focus > .iconButton-label,
+#master .guidetoolbar .backToSummary .guideFieldWidget button:focus > .iconButton-label {
+  background-color: #ffbf47;
+}
+#master .guidebutton .guideFieldWidget button {
+  padding: 5px 15px 5px 15px;
+}
+#master .guidetoolbar input[type="button"],
+#master .guidebutton input[type="button"],
+#master .guidetoolbar button,
+#master .guidebutton button {
+  text-transform: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 0 #003518;
+  height: auto;
+  width: auto;
+}
+#master .guidetoolbar input[type="button"] span,
+#master .guidebutton input[type="button"] span,
+#master .guidetoolbar button span,
+#master .guidebutton button span {
+  font-size: inherit;
+}
+#master .guidetoolbar input[type="button"]:hover,
+#master .guidebutton input[type="button"]:hover,
+#master .guidetoolbar button:hover,
+#master .guidebutton button:hover {
+  background-color: #006435;
+}
+#master .guidetoolbar input[type="button"]:active,
+#master .guidebutton input[type="button"]:active,
+#master .guidetoolbar button:active,
+#master .guidebutton button:active {
+  box-shadow: none;
+  top: 3px;
+}
+#master .guidetoolbar input[type="button"]:focus,
+#master .guidebutton input[type="button"]:focus,
+#master .guidetoolbar button:focus,
+#master .guidebutton button:focus {
+  background-color: #00823b;
+}
+#master .previtemnav button,
+#master button.goSummary {
+  box-shadow: none;
+  margin: 0;
+}
+#master .previtemnav button:active,
+#master button.goSummary:active {
+  box-shadow: none;
+  margin: 0;
+}
+#master #go-to-summary-link {
+  margin-left: 30px;
+}
+#master .wizard-navigators {
+  white-space: normal;
+  width: 100%;
+}
+#master .wizard-navigators > li {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+#master .wizard-navigators > li a,
+#master .wizard-navigators > li span {
+  width: 100%;
+  padding: 0;
+}
+#master .wizard-navigators > li:before {
+  display: none;
+}
+#master .wizard-navigators > li.active {
+  color: black;
+  border-bottom: solid black 3px;
+}
+#master .navigator-toggle {
+  background-color: #d53058;
+  color: white;
+}
+#master .navigator-toggle:hover {
+  background-color: #c6264c;
+  color: white;
+}
+#master .tab-navigators-vertical .tab-navigators-vertical {
+  border: none;
+}
+#master .tab-navigators-vertical .tab-navigators-vertical li,
+#master .tab-navigators-vertical .tab-navigators-vertical li .active {
+  color: #3d3d3d;
+  background-color: #ffffff;
+}
+#master .tab-navigators-vertical .tab-navigators-vertical li > a,
+#master .tab-navigators-vertical .tab-navigators-vertical li .active > a,
+#master .tab-navigators-vertical .tab-navigators-vertical li > a:hover,
+#master .tab-navigators-vertical .tab-navigators-vertical li .active > a:hover {
+  color: #3d3d3d;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+#master .tab-navigators-vertical > li {
+  border-bottom: 1px solid #bfc1c3;
+}
+#master .guidefieldVerticalAlignment,
+#master .guidefieldHorizontalAlignment {
+  float: left;
+}
+#master .guideFieldWidget.multiline {
+  min-height: 60px;
+}
+#master .guideFieldNode:before,
+#master .guideFieldNode:after {
+  content: " ";
+  display: table;
+}
+#master .guideFieldNode:after {
+  clear: both;
+}
+#master .panel {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#master .guide-tab-scroller {
+  margin-top: 10px;
+}
+#master .guideFieldNode .guideHelpQuestionMark {
+  font-size: 1em;
+  padding-left: 6px;
+  position: relative;
+  width: 50%;
+  cursor: pointer;
+  color: #007fa2;
+  background-color: inherit;
+}
+#master .guideFieldLabel {
+  padding-right: 30px;
+  white-space: normal;
+  word-break: break-word;
+  word-wrap: break-word;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  width: 100%;
+}
+#master .guideFieldNode .guideFieldDescription {
+  margin-top: 5px;
+  margin-left: 0;
+  border-radius: 0;
+  transition: 0;
+}
+#master .guideFieldError {
+  margin-left: 30%;
+  clear: both;
+}
+#master .hmrc-summary {
+  padding: 0;
+}
+#master .hmrc-summary > div {
+  width: 100%;
+  border-collapse: collapse;
+  word-wrap: break-word;
+}
+#master .hmrc-summary > div div {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  font-size: 1em;
+}
+#master .hmrc-summary > div div + .hmrc-s-grouped {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+#master .hmrc-summary > div div + .hmrc-s-grouped + .hmrc-s-grouped {
+  padding-top: 0;
+}
+#master .hmrc-summary > div div.hmrc-s-single {
+  border-bottom: solid 1px #b4b4b4;
+}
+#master .hmrc-summary > div div:first-child {
+  border-top: solid 1px #b4b4b4;
+}
+#master .hmrc-s-grouped + .hmrc-s-single {
+  border-top: solid 1px #b4b4b4;
+}
+#master .hmrc-summary h2 + div {
+  border-top: solid 1px #b4b4b4;
+}
+#master .hmrc-summary div + h2 {
+  margin-top: 18px;
+}
+#master .hmrc-summary div {
+  vertical-align: top;
+}
+#master span.hmrc-s-label {
+  vertical-align: top;
+  width: 40%;
+  display: inline-block;
+}
+#master span.hmrc-s-data {
+  vertical-align: top;
+  width: 40%;
+  display: inline-block;
+}
+#master span.hmrc-s-link {
+  width: auto;
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+#master span.hmrc-s-link > a span {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: auto;
+  left: -10000px;
+}
+#master .hmrc-summary #dynamic-content h2:last-child {
+  display: none;
+}
+#master .backToSummary {
+  margin-left: 30px;
+  top: 10px;
+}
+#master .backToSummary a {
+  font-size: 19px;
+  font-weight: normal;
+}
+#master .backToSummary .guideFieldWidget .goSummary {
+  position: relative !important;
+  line-height: 19px;
+}
+#master .backToSummary .guideFieldWidget.xfaButton {
+  height: auto;
+}
+#master .gridFluidLayout .row {
+  margin-bottom: 0px;
+}
+#master .guideContainerWrapperNode.guideContainerNode.container {
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  #master .container {
+  width: auto;
+}
+
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #master #phase-notice p {
+  padding-left: 0;
+}
+#master span.hmrc-s-data {
+  width: 40%;
+}
+#master span.hmrc-s-label,
+#master span.hmrc-s-data,
+#master span.hmrc-s-link {
+  vertical-align: top;
+}
+
+}
+@media (max-width: 767px) {
+  #master {
+  /*// additional padding/spacing //*/
+
+}
+#master .guideContainerWrapperNode.guideContainerNode {
+  padding: 0;
+  margin: auto;
+}
+#master .guideFieldWidget input[type="text"],
+#master .guideFieldWidget textarea {
+  font-size: 16px;
+}
+#master .leadText p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+#master .bodyCopy p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+#master .supportingText p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+}
+#master a,
+#master a:link {
+  font-size: 16px;
+}
+#master .backToSummary a {
+  font-size: 16px;
+  font-weight: normal;
+}
+#master h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+#master h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+#master h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+#master .progress-title {
+  color: #6f777b;
+  font-size: 20px;
+}
+#master .infoText p {
+  font-size: 16px;
+}
+#master .insetText p {
+  font-size: 16px;
+}
+#master .miscHeading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+#master .guideFieldNode .guideFieldLabel label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+#master .guideFieldNode .guideWidgetLabel label {
+  font-size: 16px;
+  line-height: 25px;
+}
+#master .guideFieldNode .guideFieldDescription p {
+  font-size: 16px;
+}
+#master .supplementary-text {
+  color: #6f777b;
+  font-size: 16px;
+}
+#master .guideFieldNode .guideFieldError {
+  color: #df3034;
+  font-size: 16px;
+  font-weight: 500;
+}
+#master .guidetoolbar button,
+#master .guidetoolbar #backlink,
+#master .guideButton button.button {
+  font-size: 16px;
+}
+#master .guideFieldNode .guideHelpQuestionMark {
+  font-size: 16px;
+  color: #007fa2;
+}
+#master .hmrc-summary > div {
+  font-size: 16px;
+}
+#master .guidefield,
+#master .guidetextdraw,
+#master .guidetextbox,
+#master .customtitle {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+#master .span.hmrc-s-data {
+  width: 30%;
+}
+#master span.hmrc-s-label,
+#master span.hmrc-s-data,
+#master span.hmrc-s-link {
+  vertical-align: top;
+}
+
+}
+@media (max-width: 585px) {
+  #master {
+  /*//// spacing/padding ///*/
+
+  /*/// resize fields ////*/
+
+}
+#master .banner-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#master span.hmrc-s-label,
+#master span.hmrc-s-data,
+#master span.hmrc-s-link {
+  width: 100%;
+}
+#master .parbase.ErrorSummary {
+  padding: 0 15px 0 15px;
+}
+#master .townCounty > .guideFieldWidget input[type="text"],
+#master .postCode > .guideFieldWidget input[type="text"],
+#master .ninoNumber > .guideFieldWidget input[type="text"],
+#master .bankAccountNumber > .guideFieldWidget input[type="number"],
+#master .sortCode > .guideFieldWidget input[type="number"] {
+  width: 100%;
+}
+#master .guideFieldWidget input[type="date"],
+#master .guideFieldWidget input[type="number"],
+#master .guideFieldWidget input[type="tel"],
+#master .guideFieldNode > .guideFieldWidget input[type="text"],
+#master .guideFieldNode > .guideFieldWidget input[type="number"],
+#master .guideFieldNode > .guideFieldWidget input[type="tel"] .guideFieldWidget input[type="password"],
+#master .guideFieldWidget select,
+#master .guideFieldWidget textarea {
+  width: 100%;
+}
+#master .taxYearFrom > .guideFieldWidget input[type="number"],
+#master .taxYearTo > .guideFieldWidget input[type="number"],
+#master .taxYearFrom .guideFieldWidget input[type="tel"],
+#master .taxYearTo .guideFieldWidget input[type="tel"] {
+  width: 50px;
+}
+#master .guideFieldNode .guideFieldDescription.short {
+  width: 100%;
+}
+
+}

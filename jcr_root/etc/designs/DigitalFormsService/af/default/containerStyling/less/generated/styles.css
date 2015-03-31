@@ -1,0 +1,411 @@
+/***********************************************************/
+/*
+/*	Stylign for the container, header footer etc.
+/*
+/***********************************************************/
+#skiplink-container {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+#skip {
+  position: absolute;
+  left: -9999em;
+}
+#skip:focus {
+  position: static;
+}
+.banner-title {
+  color: #ffffff;
+}
+.page-header {
+  padding-bottom: 0;
+  margin: 0;
+  border-bottom: none;
+  border-top-width: 1px;
+  border-top-color: #fff;
+}
+.banner-title {
+  width: 60%;
+  float: right;
+}
+header .guideformtitle h1,
+header .guideformtitle h2,
+header .guideformtitle h3 {
+  padding: 0;
+  margin: 0;
+}
+#global-header .header-wrapper:after,
+#global-header .header-wrapper .header-global:after,
+#global-header .header-wrapper .header-global .header-logo:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#global-header {
+  font-family: "nta", Arial, sans-serif;
+  background-color: #0b0c0c;
+  width: 100%;
+  height: auto;
+}
+#global-header p {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: bold;
+}
+#global-header .header-wrapper {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px 0 30px;
+}
+#global-header .header-logo {
+  padding-bottom: 0.6em;
+  width: auto;
+  float: left;
+}
+#global-header #logo {
+  float: left;
+  position: relative;
+  top: 1px;
+  height: 30px;
+  overflow: visible;
+  vertical-align: baseline;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1em;
+  text-decoration: none;
+  margin-bottom: 1px;
+}
+#global-header #logo img {
+  position: relative;
+  top: -2px;
+  width: 35px;
+  height: 31px;
+  padding-right: 0;
+  float: left;
+  display: inline;
+  line-height: inherit;
+  border: none;
+  margin-right: 5px;
+}
+#global-header #logo span > span {
+  margin: 0 1px 0 -6px;
+}
+#global-header #logo:hover,
+#global-header #logo:focus {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  /*margin-bottom: 0;*/
+}
+#global-header #logo:active {
+  color: #2b8cc4;
+}
+#service-bar {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 15px 0 15px;
+}
+#service-bar #inner {
+  background: #009390;
+  height: 10px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#phase-notice {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 15px 0 15px;
+}
+#phase-notice .beta {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
+  color: #ffffff;
+  background: #f47738;
+}
+#phase-notice a {
+  color: #005ea5;
+  text-decoration: underline;
+}
+#phase-notice a:hover {
+  color: #2e8aca;
+}
+#phase-notice a:focus {
+  background-color: #ffbf47;
+}
+#phase-notice strong {
+  text-transform: uppercase;
+}
+#phase-notice p {
+  margin: auto;
+  max-width: 620px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#phase-notice #bottom-line {
+  background: #bfc1c3;
+  height: 3px;
+}
+@media (max-width: 768px) {
+  #global-header .header-wrapper {
+  padding: 10px 30px 0 30px;
+}
+.banner-title {
+  float: left;
+  width: 100%;
+}
+
+}
+@media (max-width: 585px) {
+  #global-header .header-wrapper {
+  padding: 10px 15px 0 15px;
+}
+
+}
+#phase-notice p {
+  margin: auto;
+  max-width: 1270px;
+  color: black;
+  padding: 5px 5px 5px 5px;
+}
+/*////////////////      Footer            ////////////////////*/
+#footer {
+  background-color: #dee0e2;
+  border-top: 1px solid #bfc1c3;
+  height: auto;
+}
+#footer .footer-wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 60px 30px 0 30px;
+}
+@media (max-width: 640px) {
+  #footer .footer-wrapper {
+  padding-top: 20px;
+}
+
+}
+#footer a {
+  color: #454a4c;
+  text-decoration: underline;
+}
+#footer a:hover {
+  color: #171819;
+}
+#footer a:focus {
+  background-color: #ffbf47;
+}
+#footer h2 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: bold;
+  color: #171819;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  #footer h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+}
+#footer h2 a {
+  color: inherit;
+}
+#footer .footer-meta {
+  clear: both;
+  font-size: 0;
+  color: #454a4c;
+  padding-bottom: 60px;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta {
+  margin: 0;
+}
+
+}
+#footer .footer-meta .footer-meta-inner {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 75%;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner {
+  display: block;
+  width: 100%;
+}
+
+}
+#footer .footer-meta .footer-meta-inner ul {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  text-transform: none;
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner ul {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+}
+#footer .footer-meta .footer-meta-inner ul li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner ul {
+  width: auto;
+  margin: 0 0 1.5em 0;
+}
+
+}
+#footer .footer-meta .footer-meta-inner .open-government-licence {
+  clear: left;
+  position: relative;
+  padding-left: 53px;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner .open-government-licence {
+  padding-left: 0;
+}
+
+}
+#footer .footer-meta .footer-meta-inner .open-government-licence h2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 41px;
+  height: auto;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner .open-government-licence h2 {
+  position: static;
+  width: auto;
+  margin-bottom: 1em;
+}
+
+}
+#footer .footer-meta .footer-meta-inner .open-government-licence h2 a,
+#footer .footer-meta .footer-meta-inner .open-government-licence h2 img {
+  display: block;
+  width: 43px;
+  height: 17px;
+}
+#footer .footer-meta .footer-meta-inner .open-government-licence p {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  margin: 0;
+  padding-top: 0.1em;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner .open-government-licence p {
+  font-size: 14px;
+  line-height: 1.14286;
+}
+
+}
+#footer .footer-meta .footer-meta-inner .open-government-licence p a {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner .open-government-licence p a {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .footer-meta-inner .open-government-licence p a {
+  font-size: 1em;
+}
+
+}
+#footer .footer-meta .copyright {
+  vertical-align: top;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  display: inline-block;
+  float: none;
+  text-align: inherit;
+  width: 25%;
+  padding-top: 15px;
+}
+#footer .footer-meta .copyright a:focus {
+  background-color: #ffbf47;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .copyright {
+  font-size: 14px;
+  line-height: 1.14286;
+}
+
+}
+#footer .footer-meta .copyright a {
+  display: block;
+  padding: 115px 0 0 0;
+  background: transparent url("https://assets.digital.cabinet-office.gov.uk/static/images/govuk-crest-795cd6afb205d81a4267e100e11debe1.png") no-repeat 3px 0;
+  text-align: right;
+  text-decoration: none;
+  float: right;
+}
+@media (max-width: 640px) {
+  #footer .footer-meta .copyright {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+#footer .footer-meta .copyright a {
+  text-align: center;
+  background-position: 50% 0%;
+  float: none;
+}
+
+}
+main {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 90px 0 90px;
+}
+@media (min-width: 585px) {
+  #phase-notice,
+#service-bar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+main {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+}
+@media (max-width: 585px) {
+  main {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+}

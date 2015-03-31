@@ -1,0 +1,11 @@
+/***********************************************************/
+/*
+/*	Edit mode specific styling to help with form creation
+/*
+/***********************************************************/
+#master .panel {
+  padding-left: 10px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+  outline: dashed 2px #009390;
+}

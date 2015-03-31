@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Final HMRC Wizard - a multi-step forms showing one step at a time. Includes an error summary component."
+    jcr:primaryType="cq:Component"
+    sling:resourceSuperType="/libs/fd/af/layouts/panel/wizard"
+    enableLayoutOptimization="{Boolean}true"
+    guideComponentType="fd/af/layouts/panel"
+    guideLayoutNode="{Boolean}true"
+    guideNavigatorTab="wizard-tab"
+    qtip="Final HMRC Wizard - a multi-step forms showing one step at a time.  Includes an error summary component."/>

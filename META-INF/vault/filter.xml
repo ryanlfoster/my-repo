@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+
+	<filter root="/apps/DigitalFormsService"/>
+
+	<filter root="/etc/designs/DigitalFormsService"/>
+
+	<filter root="/content/forms/af/DigitalAdaptiveForms/final"/>
+
+	<filter root="/content/dam/formsanddocuments/DigitalAdaptiveForms/final"/>
+
+</workspaceFilter>

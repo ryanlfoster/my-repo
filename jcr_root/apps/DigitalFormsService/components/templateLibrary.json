@@ -1,0 +1,67 @@
+// 	List of components
+
+//	Data Format example
+//{
+//	  //	These will be shown in the field dialog when you are choosing the type of field to make
+//    value: "emailtemplate", 	// dialog dropdown value
+//    text: "Email Template", 	// dialog dropdown visible text
+//    qtip: "Email address", 	// dialog dropdown tooltip?
+//
+//	  //	these are the dialog properties you want to set
+//    title: "Email address (optional)" 	// validation message
+//    mandatory: false, 				// mandatory validation message
+//    validationRequiredMessage: "Please enter an email address", 				// mandatory validation message
+//    validationFunc: "emailAddressField(this)", 								// validation function
+//    validationMessage: "Please enter an email address in the correct format" 	// validation message
+//	  multiLine: false 	// validation message
+//}
+
+jsonarr = [
+    {
+        value: "default",
+        text: "Default preset",
+        qtip: "Field with default preset",
+        title: "Default preset",
+
+        mandatory: false,
+        validationRequiredMessage: "",
+        validationFunc: "",
+        validationMessage: ""
+
+    },
+	{
+        value: "emailtemplate",
+        text: "Email Template",
+        qtip: "Email address",
+
+        title: "Email address",
+        mandatory: true,
+        validationRequiredMessage: "Please enter an email address",
+        validationFunc: "emailAddressField(this)",
+        validationMessage: "Please enter an email address in the correct format"
+
+    },
+    {
+        value: "payeetemplate",
+        text: "PAYE Template",
+        qtip: "PAYE",
+
+        title: "PAYE Reference",
+        mandatory: true,
+        validationRequiredMessage: "Please enter a PAYE",
+        validationFunc: "payeField(this)",
+        validationMessage: "Please enter PAYE in the correct format"
+
+    },
+    {
+        value: "ninotemplate",
+        text: "Nino Template",
+        qtip: "NINO",
+
+        title: "National Insurance Number",
+        mandatory: true,
+        validationRequiredMessage: "Please enter a NINO",
+        validationFunc: "ninoField(this)",
+        validationMessage: "Please enter a nino in the correct format"
+    }
+]
